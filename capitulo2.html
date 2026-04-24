@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resumo Capítulo 2</title>
+</head>
+
+<body>
+
+<h1>Resumo do Capítulo 2: Estruturando Páginas Web com HTML</h1>
+
+<h2>Introdução: O que é HTML?</h2>
+<p>HTML é uma das três linguagens mais importantes para o desenvolvimento frontend, junto com CSS e JavaScript. O HTML é responsável por definir a <strong>estrutura</strong> e a <strong>semântica</strong> de uma página web. Ele funciona por meio de elementos, que são as "tags" que usamos para marcar o conteúdo.</p>
+
+<h2>Versões do HTML</h2>
+<p>O HTML foi criado por Tim Berners-Lee em 1989 no CERN. A primeira versão saiu em 1992 sem número de versão. O HTML 4.0 foi lançado em 1997 e foi importante porque introduziu o suporte ao CSS. Depois veio o XHTML 1.0, que reformulou o HTML seguindo as regras mais rígidas do XML, exigindo que atributos fossem em minúscula e tivessem sempre um valor. O HTML5 foi lançado em 2014 e é a versão atual que usamos hoje. O HTML5 é mantido como um "Living Standard" pela WHATWG e W3C, o que significa que recebe atualizações contínuas sem precisar de novos números de versão.</p>
+
+<h2>Elementos e Atributos</h2>
+<p>Os elementos HTML definem os componentes de uma página. Cada elemento é composto por uma tag de abertura (como &lt;h1&gt;) e uma tag de fechamento (como &lt;/h1&gt;). O texto ou conteúdo fica entre essas duas tags. Os atributos são informações adicionais que você passa para um elemento. Eles ficam dentro da tag de abertura e têm a forma nome="valor". Por exemplo, na tag &lt;a href="url"&gt;, o "href" é o atributo e "url" é o valor.</p>
+
+<h2>Estrutura Básica de um Documento HTML</h2>
+<p>Um arquivo HTML é um documento de texto comum com a extensão .html. A estrutura básica começa com &lt;!DOCTYPE html&gt; para declarar que é HTML5. Depois vem a tag &lt;html&gt; que envolve todo o conteúdo. Dentro dela tem a tag &lt;head&gt;, que contém informações que não aparecem na página, como o título (dentro de &lt;title&gt;) e metadados. Por fim, vem a tag &lt;body&gt;, que contém todo o conteúdo visível da página.</p>
+
+<h2>Títulos, Parágrafos e Formatação de Texto</h2>
+<p>Existem seis níveis de títulos em HTML: &lt;h1&gt; é o mais importante e &lt;h6&gt; é o menos importante. Os navegadores exibem os títulos em tamanhos diferentes. Para parágrafos, usamos a tag &lt;p&gt;. O HTML oferece várias formas de formatar texto. A tag &lt;strong&gt; marca texto em negrito com importância semântica, enquanto &lt;b&gt; também deixa em negrito mas sem essa importância. A tag &lt;em&gt; marca texto em itálico com ênfase semântica, e &lt;i&gt; deixa em itálico sem a ênfase. Também existem &lt;sup&gt; para sobrescrito (como em expoentes) e &lt;sub&gt; para subscrito (como em fórmulas químicas). A tag &lt;br /&gt; cria quebras de linha. Para citações, use &lt;blockquote&gt; para citações longas, &lt;q&gt; para citações curtas, e &lt;cite&gt; para referências de fonte. Abreviações e acrônimos usam &lt;abbr&gt;, e definições de termos usam &lt;dfn&gt;.</p>
+
+<h2>Criando Listas</h2>
+<p>Existem três tipos de listas em HTML. Listas ordenadas (numeradas) usam &lt;ol&gt; com &lt;li&gt; para cada item. Listas não ordenadas (com bolinhas) usam &lt;ul&gt; com &lt;li&gt; para cada item. Listas de definição usam &lt;dl&gt;, com &lt;dt&gt; para o termo e &lt;dd&gt; para a definição. Você também pode colocar listas dentro de listas, criando listas aninhadas, que o navegador indenta automaticamente.</p>
+
+<h2>Definindo Links</h2>
+<p>Existem três tipos de links. Links externos levam você para outros sites e usam a URL completa como href. Links relativos levam você para outras páginas no mesmo site e usam apenas o caminho relativo, sem o domínio. Links internos pulam para outro lugar na mesma página usando âncoras, que são marcadas com o atributo id. Para criar um link interno, você coloca # seguido do id no href. É importante que o texto do link seja significativo, como "Clique aqui para mais informações" em vez de apenas "Clique aqui", porque isso ajuda na acessibilidade e usabilidade.</p>
+
+<h2>Incluindo Imagens</h2>
+<p>Para adicionar imagens, usamos a tag &lt;img&gt;, que é uma tag vazia (não tem conteúdo dentro). O atributo src especifica o caminho da imagem, geralmente um caminho relativo para uma pasta de imagens no seu projeto. O atributo alt é muito importante porque fornece um texto alternativo que aparece se a imagem não carregar, e também ajuda leitores de tela para usuários com deficiência visual e motores de busca a entender o que está na imagem. Desde o HTML5, você pode adicionar legendas às imagens usando &lt;figure&gt; como elemento pai e &lt;figcaption&gt; para a legenda.</p>
+
+<h2>Estruturando Dados em Tabelas</h2>
+<p>Tabelas são boas para exibir dados organizados em linhas e colunas. A tag &lt;table&gt; cria a tabela, &lt;tr&gt; cria uma linha, &lt;td&gt; cria uma célula de dados, e &lt;th&gt; cria uma célula de cabeçalho. Para tabelas grandes, você pode usar &lt;thead&gt; para a seção de cabeçalhos, &lt;tbody&gt; para o corpo da tabela, e &lt;tfoot&gt; para o rodapé. Isso ajuda na acessibilidade e permite estilizar essas seções com CSS. Se você quer que uma célula ocupe mais de uma coluna, use o atributo colspan. Se quer que ocupe mais de uma linha, use rowspan.</p>
+
+<h2>Definindo Formulários</h2>
+<p>Formulários são usados para coletar dados do usuário. Você usa a tag &lt;form&gt; para criar o formulário. Dentro dela, pode usar &lt;fieldset&gt; para agrupar campos relacionados de forma significativa. Para criar campos de entrada, use a tag &lt;input&gt; com diferentes valores de type: "text" para texto, "password" para senhas, "email" para emails, "radio" para botões de seleção única, "checkbox" para caixas de seleção múltipla. Use &lt;select&gt; e &lt;option&gt; para criar listas suspensas. Use &lt;textarea&gt; para campos de texto maior. A tag &lt;label&gt; adiciona rótulos aos campos e melhora a acessibilidade. O atributo action do &lt;form&gt; especifica para onde os dados serão enviados, e o atributo method especifica como (GET ou POST). Cada campo precisa de um atributo name para que os dados sejam enviados corretamente.</p>
+
+<h2>Conceitos Adicionais Importantes</h2>
+<p>Elementos de bloco começam em uma nova linha e ocupam toda a largura disponível. Exemplos incluem &lt;p&gt;, &lt;div&gt;, &lt;h1&gt; e &lt;table&gt;. Elementos inline ocupam apenas o espaço necessário e ficam na mesma linha. Exemplos incluem &lt;a&gt;, &lt;strong&gt;, &lt;em&gt; e &lt;img&gt;. A tag &lt;div&gt; agrupa elementos como bloco, enquanto &lt;span&gt; agrupa elementos inline. Ambas são usadas quando você quer criar componentes personalizados que não têm uma tag específica. Alguns caracteres especiais como &lt; e &gt; precisam ser escapados usando códigos HTML: &lt; se escreve como &amp;lt; e &gt; se escreve como &amp;gt;. O atributo id identifica um elemento de forma única na página e é importante para links internos e para trabalhar com CSS. O atributo class agrupa elementos em categorias para estilização com CSS. Você pode adicionar comentários no HTML usando &lt;!-- comentário --&gt;. Além de imagens, você pode incluir arquivos multimídia como áudio e vídeo. Dentro da tag &lt;head&gt;, você pode adicionar metadados com a tag &lt;meta&gt; para informações sobre a página, como palavras-chave para SEO. O HTML5 introduziu elementos semânticos como &lt;header&gt; (cabeçalho), &lt;footer&gt; (rodapé), &lt;nav&gt; (navegação), &lt;article&gt; (artigos), &lt;aside&gt; (informações laterais) e &lt;section&gt; (seções) para descrever melhor a estrutura da página. Dentro do &lt;head&gt;, você pode incluir arquivos CSS com &lt;link&gt; e arquivos JavaScript com &lt;script&gt;.</p>
+
+<h2>Resumo das Regras Fundamentais</h2>
+<p>HTML é uma linguagem de marcação que define a estrutura e semântica de páginas web usando elementos. Cada elemento tem uma tag de abertura e uma tag de fechamento. Informações adicionais são passadas através de atributos que ficam na tag de abertura. Alguns elementos podem conter outros elementos e texto, mas elementos vazios não podem. Páginas web são documentos de texto simples com extensão .html. Existem muitos elementos HTML disponíveis, sendo os mais importantes os títulos, parágrafos, listas, links, imagens, tabelas e formulários.</p>
+
+</body>
+</html>
